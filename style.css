@@ -1,0 +1,111 @@
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    text-underline-offset: 0.5em;
+    background-color: black;
+}
+
+.container {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.container::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.box {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.3em;
+    border-style: dashed;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-shadow: 5px 5px 5px blue;
+    color: white;
+}
+
+h1:hover {
+    text-shadow: 5px 5px 5px red;
+}
+
+h2:hover {
+    text-shadow: 5px 5px 5px red;
+}
+
+h1 {
+    font-family: 'Michroma', sans-serif;
+    font-size: 6em;
+}
+
+h2, h3 {
+    font-family: 'Michroma', sans-serif;
+}
+
+td {
+    white-space: nowrap;
+    padding-right: 2em !important;
+}
+
+.first-box {
+    overflow: hidden;
+    position: relative;
+}
+
+.moving-text {
+    color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    margin-right: -40em;
+    
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.social {
+    font-size: 3em;
+}
+
+.end-section {
+    border-left: 2px solid rgba(255, 255, 255, 0.4);
+    border-left-style: dashed;
+    padding-left: 3em;
+}
+
+@media screen and (max-width: 700px) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .box {
+        padding: 0 !important;
+    }
+
+    .social {
+        font-size: 2em;
+    }
+
+    .end-section {
+        border-left: none;
+        padding-left: 1em;
+        margin-top: 3em;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        border-top-style: dashed;
+    }
+
+    .moving-text {
+        display: none;
+    }
+
+}
