@@ -6,13 +6,12 @@ body {
 
 .container {
     overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-.container::-webkit-scrollbar { /* WebKit */
-    width: 0;
-    height: 0;
+.container::-webkit-scrollbar {
+    display: none
 }
 
 .box {
@@ -27,25 +26,26 @@ a {
 }
 
 a:hover {
-    text-shadow: 5px 5px 5px blue;
+    text-shadow: 5px 5px 10px blue;
     color: white;
 }
 
-h1:hover {
-    text-shadow: 5px 5px 5px red;
-}
-
-h2:hover {
-    text-shadow: 5px 5px 5px red;
+h1:hover, h2:hover {
+    text-shadow: 10px 10px 10px red;
 }
 
 h1 {
     font-family: 'Michroma', sans-serif;
+    font-weight: bolder;
     font-size: 6em;
 }
 
 h2, h3 {
     font-family: 'Michroma', sans-serif;
+}
+
+h2 {
+    font-weight: bolder;
 }
 
 td {
@@ -72,13 +72,17 @@ td {
     font-size: 3em;
 }
 
+.scroll {
+    color: black;
+}
+
 .end-section {
     border-left: 2px solid rgba(255, 255, 255, 0.4);
     border-left-style: dashed;
     padding-left: 3em;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
 
     h1 {
         font-size: 3em;
@@ -106,6 +110,10 @@ td {
 
     .moving-text {
         display: none;
+    }
+
+    .scroll {
+        color: white;
     }
 
 }
