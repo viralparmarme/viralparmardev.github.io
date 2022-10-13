@@ -82,6 +82,10 @@ td {
     padding-left: 3em;
 }
 
+.bi {
+    font-size: 3em;
+}
+
 @media screen and (max-width: 1000px) {
 
     h1 {
@@ -114,6 +118,10 @@ td {
 
     .scroll {
         color: white;
+    }
+
+    .bi {
+        font-size: 2em;
     }
 
 }
