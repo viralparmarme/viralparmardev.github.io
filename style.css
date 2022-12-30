@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Monument;
+    src: url(monument.otf);
+  }
+
 body {
     font-family: 'Lexend Deca', sans-serif;
     text-underline-offset: 0.5em;
@@ -30,18 +35,14 @@ a:hover {
     color: white;
 }
 
-h1:hover, h2:hover {
-    text-shadow: 10px 10px 10px red;
-}
-
 h1 {
-    font-family: 'Michroma', sans-serif;
+    font-family: 'Monument', sans-serif;
     font-weight: bolder;
     font-size: 6em;
 }
 
 h2, h3 {
-    font-family: 'Michroma', sans-serif;
+    font-family: 'Monument', sans-serif;
 }
 
 h2 {
@@ -51,6 +52,7 @@ h2 {
 td {
     white-space: nowrap;
     padding-right: 2em !important;
+    padding-bottom: 1.5em !important;
 }
 
 .first-box {
@@ -74,6 +76,10 @@ td {
 
 .scroll {
     color: black;
+}
+
+.skills {
+    line-height: 2em;
 }
 
 .end-section {
