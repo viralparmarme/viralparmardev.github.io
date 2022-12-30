@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Monument;
-    src: url(monument.otf);
+    font-family: 'Monument Regular';
+    src: url(./monument.otf);
   }
 
 body {
@@ -36,13 +36,13 @@ a:hover {
 }
 
 h1 {
-    font-family: 'Monument', sans-serif;
+    font-family: 'Monument Regular', sans-serif;
     font-weight: bolder;
     font-size: 6em;
 }
 
 h2, h3 {
-    font-family: 'Monument', sans-serif;
+    font-family: 'Monument Regular', sans-serif;
 }
 
 h2 {
