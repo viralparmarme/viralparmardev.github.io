@@ -4,9 +4,20 @@
   }
 
 body {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-underline-offset: 0.5em;
     background-color: black;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: red;
+}
+
+::selection {
+    color: white;
+    background: red;
 }
 
 .container {
@@ -38,7 +49,7 @@ a:hover {
 h1 {
     font-family: 'Monument Regular', sans-serif;
     font-weight: bolder;
-    font-size: 6em;
+    font-size: 7em;
 }
 
 h2, h3 {
@@ -53,21 +64,6 @@ td {
     white-space: nowrap;
     padding-right: 2em !important;
     padding-bottom: 1.2em !important;
-}
-
-.first-box {
-    overflow: hidden;
-    position: relative;
-}
-
-.moving-text {
-    color: rgba(255, 255, 255, 0.3);
-    position: absolute;
-    margin-right: -40em;
-    
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
 }
 
 .social {
@@ -118,10 +114,6 @@ td {
         border-top-style: dashed;
     }
 
-    .moving-text {
-        display: none;
-    }
-
     .scroll {
         color: white;
     }
@@ -130,36 +122,4 @@ td {
         font-size: 2em;
     }
 
-}
-
-.marquee {
-    position: relative;
-    overflow: hidden;
-    --offset: 20vw;
-    --move-initial: calc(-10% + var(--offset));
-    --move-final: calc(-40% + var(--offset));
-}
-
-.marquee__inner {
-    width: fit-content;
-    display: flex;
-    position: relative;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 5s alternate infinite;
-    animation-play-state: running;
-}
-
-.marquee span {
-    font-size: 10vw;
-    padding: 0 2vw;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translate3d(var(--move-initial), 0, 0);
-    }
-
-    100% {
-        transform: translate3d(var(--move-final), 0, 0);
-    }
 }
