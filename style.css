@@ -60,7 +60,7 @@ a:hover {
 h1 {
     font-family: 'Monument Regular', sans-serif;
     font-weight: bolder;
-    font-size: 6em;
+    font-size: 3em;
 }
 
 h2 {
@@ -102,7 +102,11 @@ td {
 @media screen and (max-width: 1000px) {
 
     h1 {
-        font-size: 3em;
+        font-size: 1.5em;
+    }
+
+    .glitch {
+        font-size: 1.5em;
     }
 
     h2 {
@@ -135,7 +139,7 @@ td {
 
 .glitch {
     position: relative;
-    font-size: 80px;
+    font-size: 3em;
     font-weight: 700;
     line-height: 1.2;
     color: #fff;
@@ -154,13 +158,13 @@ td {
 }
 
 .glitch:before {
-    animation: glitch-color 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    animation: glitch-color 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
     color: blue;
     z-index: -1;
 }
 
 .glitch:after {
-    animation: glitch-color 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    animation: glitch-color 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
     color: red;
     z-index: -2;
 }
@@ -170,24 +174,20 @@ td {
         transform: translate(0);
     }
 
-    55% {
-        transform: translate(0);
+    30% {
+        transform: translate(-5px, 5px);
+    }
+
+    40% {
+        transform: translate(-5px, -5px);
     }
 
     60% {
-        transform: translate(-3px, 3px);
-    }
-
-    65% {
-        transform: translate(-3px, -3px);
+        transform: translate(5px, 5px);
     }
 
     70% {
-        transform: translate(3px, 3px);
-    }
-
-    75% {
-        transform: translate(3px, -3px);
+        transform: translate(5px, -5px);
     }
 
     to {
