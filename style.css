@@ -75,7 +75,6 @@ h2 {
 td {
     white-space: nowrap;
     padding-right: 1em !important;
-    padding-bottom: 1em !important;
 }
 
 .social {
@@ -102,11 +101,11 @@ td {
 @media screen and (max-width: 1000px) {
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .glitch {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     h2 {
